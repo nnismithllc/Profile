@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
 <!-- Style Information -->
 <style> 
     *{
@@ -25,9 +27,19 @@ line-height: 1.6em;
 color: rgb(236, 18, 18);
 }
 
+h1{
+    align-content: center;
+    padding-left: 45%;
+}
+p1{
+color: white;
+align-content: center;
+padding-left: 45%;
+}
 #showcase{
-background-image: url("Images/life.jpg");
-background-size: cover;
+background-image: url("Images/hand.jpg");
+background-size: contain;
+background-repeat: no-repeat;
 background-position: center;
 height: 120vh;
 display: flex;
@@ -35,10 +47,21 @@ flex-direction: column;
 justify-content: center;
 align-content: center;
 }
+ .button{
+align-content: center;
+padding-left: 55%;
+font-size: large;
+ }
 
-
-
-
+.jumbotron{
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    
+}
+#mi {
+    color: blue;
+    align-content: center;
+}
 </style> 
 </head>
 
@@ -46,7 +69,7 @@ align-content: center;
 <body>
     <header id="showcase">
     <h1>Ms. Smith's Journey</h1> 
-    <p>Come Explore and Journey Through Snippets of My Life</p>
+    <p1>Come Explore and Journey Through Snippets of My Life</p1>
     <a href="#" class="button"> Read More</a>
     </header>
 
@@ -69,8 +92,8 @@ align-content: center;
 <div class="container">   
    <div class="jumbotron jumbotron-fluid">
     <div class="container">
-    <h1 class="display-4">My Transparency</h1>
-    <p class="lead"> "She Remembered Who She Was, and The Game Changed" - Lalah Deliah</p>
+    <h2 class="display-4" id="mi">My Transparency</h2>
+    <p class="lead" id="lalah"> "She Remembered Who She Was, and The Game Changed" - Lalah Deliah</p>
     </div>
 </div>
 
