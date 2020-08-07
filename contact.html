@@ -19,7 +19,51 @@
         background-color: rgb(34, 33, 33);
         align-content: center;
       }
+
+      .slide {
+        justify-content: center;
+        border-color: white;
+      }
+
+      #media {
+justify-content: center;
+justify-items: center;
+padding-left: 5%;
+border-right: 20%;
+      }
+
+      #media2 {
+justify-content: center;
+padding-left: 5%;
+      }
     </style>
+
+    <script>
+var i = 0;
+var images = [];
+var time = 5000;
+
+images[0] = 'Images/f15.jpg'
+images[1] = 'Images/michigan.jpg'
+images[2] = 'Images/UofM.jpg'
+images[3] = 'Images/life.jpg'
+
+function changeImages (){
+document.slide.src =images [i];
+
+if (i < images.length -1){
+  i++;
+} else {
+  i=0;
+}
+
+setTimeout ("changeImages()", time);
+
+}
+
+window.onload = changeImages;
+
+  </script>
   </head>
 
 <!-- Body Information and Nav Bar -->
@@ -37,49 +81,12 @@
 
     <div class="container">
       <div class="row">
-       <div class="col-md-9">
-         <div class="myCarousel" class="carousel slide" data-ride="carousel">
-     
-      <ol class="carousel-indicators">
-         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-         <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-         <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
-         <li data-target="#myCarousel" data-slide-to="3" class="active"></li>
-      </ol>
-         </div>
-      
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="Images/FacebookMusic.jpg" width="100" height="100">
-        </div> 
-        
-        <div class="item active">
-            <img src="Images/UofM.jpg" width="100" height="100"> 
-        </div>
+       <div class="col-md-9" >
+        <img name = "slide" width="1000" height="500">
 
-        <div class="item active">
-          <img src="Images/michigan.jpg" width="100" height="100">
-        </div> 
-        <div class="item active">
-          <img src="Images/Faithful15.jpg" width="100" height="100">
-        </div> 
-
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
 <!-- Card Information -->
-  <div class="card w-75">
-      <div class="card-body"><h5 class="card-title .text-color{blue}">Faithful 15 Single Ministry Facebook Page</h5>
+  <div class="card w-100 media">
+      <div class="card-body" id="media2"><h5 class="card-title .text-color{blue}">Faithful 15 Single Ministry Facebook Page</h5>
         <p class="card-text">
           My Facebook is a public event page for Christian Singles who are
           looking for connections to network and get involved with the
@@ -91,7 +98,7 @@
       </div> 
       </div>
 
-    <div class="card w-50">
+    <div class="card w-100" id="media">
       <div class="card-body">
         <h5 class="card-title">Picture Me - Instagram</h5>
         <p class="card-text">
