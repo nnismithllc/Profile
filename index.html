@@ -20,9 +20,9 @@ padding: 0;
 }
 
 body {
-    background-color: rgb(34, 33, 33);
-    align-content: center;
-    margin: 0em;
+background-color: rgb(34, 33, 33);
+align-content: center;
+margin: 0em;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 font-size: 17px;
 line-height: 1.6em;
@@ -33,10 +33,18 @@ h1{
     align-content: center;
     padding-left: 42%;
 }
-p1{
+
+p{
 color: white;
 align-content: center;
 padding-left: 40%;
+}
+
+#lalah{
+color: blue;
+font-size: larger;
+align-content: left;
+
 }
 #showcase{
 background-image: url("Images/hand.jpg");
@@ -49,7 +57,8 @@ flex-direction: column;
 justify-content: center;
 align-content: center;
 }
- .button{
+
+.button{
 align-content: center;
 padding-left: 50%;
 font-size: large;
@@ -57,16 +66,18 @@ font-size: large;
 
 .jumbotron{
     font-family: 'Dancing Script', cursive;
-    color: black;
-    
+    color: black; 
 }
-#mi{
+
+.mi{
     color:rgb(236, 18, 18);
     align-content: center;
     font-family: 'Antic Slab', serif;
     /* font-family: 'Dancing Script', cursive; */
     
 }
+
+
 </style> 
 </head>
 
@@ -74,59 +85,9 @@ font-size: large;
 <body>
     <header id="showcase">
     <h1>Ms. Smith's Journey</h1> 
-    <p1>Come Explore and Journey Through Snippets of My Life</p1>
-    <a href="#" class="button"> Read More</a>
+    <p>Come Explore and Journey Through Snippets of My Life</p>
+    <a href="home.html" display=block class="button" id="read" onclick="open()"> Open Pandora's Box</a>
+    <!-- <button type="button" id="read" onclick="read()"> Open Pandora's Box</button> -->
     </header>
 
-    <ul class="nav justify-content-center">
-    
-        <li class="nav-item">
-        <a class="nav-link active" href="./About Me.html">About Me</a>
-        </li>
-        </li>
-        
-        <li class="nav-item">
-         <a class="nav-link" href="Portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-    </ul>
 
-<!-- Container Information -->
-<div class="container">   
-   <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-    <h2 class="display-4" id="mi">My Transparency</h2>
-    <p class="lead" id="lalah"> "She Remembered Who She Was, and The Game Changed" - Lalah Deliah</p>
-    </div>
-</div>
-
-<!-- Card Information -->
-<div class="row"></div>
-<div class="card">
-    <div class="d-flex justify-content-center">
-    <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="Images\Tia.jpg" alt="Tia Image">
-    <div class="card-body">
-    <p class="card-text"> <a href="About Me.html" class="card-link">About Me</a></p>
-  
-</div>
-    <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="Images\Motto.jpg" alt="Motto Image">
-    <div class="card-body">
-    <p class="card-text"> <a href="Portfolio.html" class="card-link">Family Design</a> </p>
-</div>
-
-    <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="Images\f15.jpg" alt="Faithful 15 Image">
-    <div class="card-body">
-    <p class="card-text"> <a href="contact.html" class="card-link">Contact Me</a> </p>
-
-</div>
-</div>
- </div>
-
-</style>
-</div>
-</body>
